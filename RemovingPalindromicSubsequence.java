@@ -1,8 +1,7 @@
 class Solution {
     public int removePalindromeSub(String s) {
         if(s.length()==0)return 0;
-        if(isPalindrome(s))return 1;
-        else return 2;
+        return isPalindrome(s)?1:2;
         
     }
     public static boolean isPalindrome(String s){
@@ -13,7 +12,6 @@ class Solution {
                 break;
             }
         }
-        if(flag)return true;
-        else return false;
+        return flag?true:false;
     }
 }
